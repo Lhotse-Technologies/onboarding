@@ -68,7 +68,7 @@ login_github_cli() {
 
 # Function to create project folder and set as environment variable
 create_project_folder() {
-  PROJECT_DIR=$(pwd)/lhotse-onboarding
+  PROJECT_DIR=$(pwd)
   if [ ! -d "$PROJECT_DIR" ]; then
     mkdir -p "$PROJECT_DIR"
     echo "Created project folder at $PROJECT_DIR"
