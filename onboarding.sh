@@ -98,8 +98,8 @@ check_and_clone_projects() {
 prompt_project_setup() {
   read -p "Do you want to continue with the setup for supercharger-be? (yes/no) " response
   if [[ "$response" == "yes" ]]; then
-    cd "$PROJECT_DIR/supercharger-be" || exit
-    ./project_setup.sh
+    cd "$PROJECT_DIR/scripts/supercharger-be" || exit
+    make init
   else
     echo "Skipping supercharger-be setup."
   fi
